@@ -7,12 +7,9 @@ N:B: kinect2_bridge launch file is already launched here!
 
 <launch>
 
-	<!-- LOADING PARAMS -->
-	<!-- <param name="x_res" value="679"/>
-	<param name="y_res" value="382"/> -->
-	<param name="x_res" value="450"/>
-	<param name="y_res" value="540"/>
-
+	<!-- Default qhd Res: 960 by 540  -->
+	<param name="x_res" value="480"/>
+	<param name="y_res" value="270"/>
 
 	<!-- Launching Kinect2Bridge with publish_tf true -->
 	<!-- <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
