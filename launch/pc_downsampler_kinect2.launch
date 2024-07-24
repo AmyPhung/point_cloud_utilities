@@ -8,8 +8,11 @@ N:B: kinect2_bridge launch file is already launched here!
 <launch>
 
 	<!-- Default qhd Res: 960 by 540  -->
-	<param name="x_res" value="480"/>
-	<param name="y_res" value="270"/>
+	<!-- <param name="x_res" value="480"/>
+	<param name="y_res" value="270"/> -->
+
+	<param name="x_res" value="240"/>
+	<param name="y_res" value="135"/>
 
 	<!-- Launching Kinect2Bridge with publish_tf true -->
 	<!-- <include file="$(find kinect2_bridge)/launch/kinect2_bridge.launch">
@@ -22,5 +25,11 @@ N:B: kinect2_bridge launch file is already launched here!
 		args="input_topic:=/kinect2/qhd/points output_topic:=/kinect2/qhd/downsampled_points"
 		output="screen">
 	</node>
+
+	<!-- <node name="pc_downsampler_node" pkg="point_cloud_utilities"
+		type="point_cloud_utilities_downsampler" respawn="true"
+		args="input_topic:=/kinect2/sd/filtered_points output_topic:=/kinect2//downsampled_points"
+		output="screen">
+	</node> -->
 
 </launch>
